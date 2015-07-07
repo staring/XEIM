@@ -1,0 +1,536 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\client02.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\client02.ico"
+IDI_ICON1               ICON                    "res\\user.ico"
+IDI_CHAT                ICON                    "res\\chat.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 XEIM"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "XEIM 客户端 2.7 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) FEIM Studios 2008",IDC_STATIC,40,25,127,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "http://www.freeeim.com",IDC_STATIC,39,40,129,28
+END
+
+IDD_CLIENT02_DIALOG DIALOGEX 0, 0, 126, 344
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "XEIM 客户端"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "XEIM 2.5 Beta",IDC_STATIC28,62,246,60,13
+    CONTROL         "Tree1",IDC_USERLIST,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_HSCROLL | WS_TABSTOP,0,73,125,162
+    CONTROL         144,IDC_STATIC_IMG,"Static",SS_BITMAP | SS_NOTIFY,8,13,27,27,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NICKNAME,71,10,54,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_USERNAME,71,22,54,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "昵称：",IDC_STATIC,46,10,24,8
+    LTEXT           "UID：",IDC_STATIC,46,22,22,8
+    LTEXT           "联系人(0/0)",IDC_STATIC_CONTACT,20,61,60,8
+    LTEXT           "[设置]",IDC_SETTINGS,44,34,24,8
+    LTEXT           "[消息]",IDC_STATIC_SYSMSG,71,34,43,8
+    EDITTEXT        IDC_EDIT1,1,304,124,38,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         141,IDC_STATIC,"Static",SS_BITMAP,0,47,126,1
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,5,59,11,11
+    CONTROL         141,IDC_STATIC,"Static",SS_BITMAP,0,72,126,1
+    PUSHBUTTON      "项目管理",IDC_BUTTON1,81,53,36,11
+    CTEXT           "",IDC_STATIC_INFO,13,116,99,58
+    CONTROL         141,IDC_STATIC29,"Static",SS_BITMAP,0,239,126,1
+    LTEXT           "[菜单(&M)]",IDC_STATIC_MENU,6,246,43,14
+END
+
+IDD_DIALOG1 DIALOG  0, 0, 213, 140
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "XEIM 用户登录"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,59,49,98,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,59,74,98,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "登录",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,156,118,50,14
+    LTEXT           "帐号",IDC_STATIC,19,51,18,8
+    LTEXT           "密码",IDC_STATIC,19,76,18,8
+    CONTROL         "设置↓",IDC_SETTING,"Button",BS_OWNERDRAW | WS_TABSTOP,7,119,50,14
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,16,3,183,32
+    CONTROL         "记住密码",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,59,96,47,8
+    CONTROL         "自动登录",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,96,47,8
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 252, 256
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "关闭(&C)",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,150,238,36,14
+    CONTROL         "发送(&S)",IDC_SEND,"Button",BS_OWNERDRAW | WS_TABSTOP,207,238,36,14
+    CONTROL         "发送文件(&F)",IDC_SENDFILE,"Button",BS_OWNERDRAW | WS_TABSTOP,3,5,52,14
+    CONTROL         "",IDC_RICHEDIT1,"RICHEDIT",TCS_HOTTRACK | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,4,23,243,120
+    CONTROL         "短信(&M)",IDC_SENDSMS,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,65,5,32,14
+    CONTROL         "聊天记录(&H)",IDC_HISTORY,"Button",BS_OWNERDRAW | WS_TABSTOP,5,238,52,14
+    CONTROL         "",IDC_RICHEDIT2,"RICHEDIT",TCS_HOTTRACK | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,4,157,246,79
+    CONTROL         "振动(&Z)",IDC_SHAKE,"Button",BS_OWNERDRAW | WS_TABSTOP,110,5,32,14
+END
+
+IDD_DIALOG3 DIALOG  0, 0, 187, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "服务器设置"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,95,73,50,14
+    PUSHBUTTON      "取消",IDCANCEL,23,73,50,14
+    LTEXT           "服务器地址（IP或域名）：",IDC_STATIC,19,15,124,8
+    EDITTEXT        IDC_SVR,19,31,148,12,ES_AUTOHSCROLL
+    CONTROL         "系统启动时自动启动",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,51,90,8
+END
+
+IDD_DIALOG4 DIALOG  0, 0, 187, 30
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System"
+BEGIN
+END
+
+IDD_DIALOG5 DIALOG  0, 0, 187, 116
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "短消息发送"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "发送(&S)",IDOK,130,95,50,14
+    PUSHBUTTON      "关闭(&C)",IDCANCEL,43,95,50,14
+    EDITTEXT        IDC_EDIT1,7,22,173,42,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "在此输入短信内容，1000字以下。",IDC_STATIC,7,7,173,8
+    LTEXT           "联系电话：",IDC_STATIC,7,71,42,8
+    EDITTEXT        IDC_EDIT_SENDER_NUM,52,69,128,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_HISTORY_VIEW DIALOG  0, 0, 266, 231
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "XEIM 聊天记录查询"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_RICHEDIT1,"RICHEDIT",TCS_HOTTRACK | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,7,34,252,190
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,170,7,59,14
+    LTEXT           "_",IDC_STATIC2,7,10,118,8
+    PUSHBUTTON      "<<",IDC_BACK,153,7,14,13
+    PUSHBUTTON      ">>",IDC_FRONT,232,7,14,13
+END
+
+IDD_NORMAL_SMS DIALOG  0, 0, 188, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "短信发送"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "发送(&S)",IDOK,133,133,50,14
+    PUSHBUTTON      "关闭(&C)",IDCANCEL,23,133,50,14
+    LTEXT           "发给谁：",IDC_STATIC,5,12,32,8
+    EDITTEXT        IDC_EDIT1,39,4,145,24,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "签  名：",IDC_STATIC,5,36,33,8
+    EDITTEXT        IDC_EDIT2,39,34,145,12,ES_AUTOHSCROLL
+    LTEXT           "填写消息：",IDC_STATIC,5,53,52,8
+    EDITTEXT        IDC_EDIT3,4,63,180,51,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_PLUGIN DIALOG  0, 0, 136, 54
+STYLE DS_SYSMODAL | DS_SETFONT | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "Static",IDC_PLUGIN,0,0,135,13,SS_NOTIFY
+END
+
+IDD_DIALOG7 DIALOG  0, 0, 230, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统消息"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,216,109,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "上一条(&P)",IDC_BACK,96,126,50,14
+    PUSHBUTTON      "下一条(&N)",IDC_NEXT,173,126,50,14
+    LTEXT           "_",IDC_STATIC_SIZE,7,128,78,8
+END
+
+IDD_SCHEDULE DIALOG  0, 0, 368, 366
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建工作"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "添加(&A)",IDOK,311,345,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,245,345,50,14
+    LTEXT           "工作主题：",IDC_STATIC,7,32,40,8
+    EDITTEXT        IDC_EDIT1,58,30,303,12,ES_AUTOHSCROLL
+    LTEXT           "日程类型：",IDC_STATIC,230,52,41,8
+    EDITTEXT        IDC_EDIT2,274,50,87,12,ES_AUTOHSCROLL
+    LTEXT           "开始日期：",IDC_STATIC,56,52,41,8
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,14,47,37,37
+    LTEXT           "结束日期：",IDC_STATIC,56,72,41,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,98,50,60,13
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,163,50,52,14
+    CONTROL         "DateTimePicker3",IDC_DATETIMEPICKER3,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,98,70,60,13
+    CONTROL         "DateTimePicker4",IDC_DATETIMEPICKER4,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,163,70,52,14
+    LTEXT           "知会人员：",IDC_STATIC,7,92,43,8
+    EDITTEXT        IDC_EDIT3,59,90,302,12,ES_AUTOHSCROLL
+    CONTROL         "不公开",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,230,72,41,8
+    LTEXT           "日程内容：",IDC_STATIC,7,112,45,8
+    EDITTEXT        IDC_EDIT4,7,125,354,212,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "项目名称：",IDC_STATIC,7,12,42,8
+    EDITTEXT        IDC_EDIT5,58,10,303,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PROJECT_NEW DIALOG  0, 0, 368, 366
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "项目管理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "新建项目(&A)",IDC_BTN_NEW_PROJECT,311,9,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,27,354,141
+    LTEXT           "项目列表：",IDC_STATIC,7,12,56,8
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,197,354,162
+    PUSHBUTTON      "新建工作(&W)",IDC_BTN_NEW_WORK,311,178,50,14
+    LTEXT           "项目工作列表：",IDC_STATIC,7,181,56,8
+END
+
+IDD_WORK DIALOG  0, 0, 337, 272
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工作管理"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "新建工作(&N)",IDOK,280,251,50,14
+    PUSHBUTTON      "关闭(&C)",IDCANCEL,137,251,50,14
+    LTEXT           "所有工作：",IDC_STATIC,7,109,72,8
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,121,323,121
+    LTEXT           "项目编号：",IDC_STATIC,7,12,42,8
+    EDITTEXT        IDC_PRJ_NUMBER,52,10,62,12,ES_AUTOHSCROLL
+    LTEXT           "项目主题：",IDC_STATIC,122,12,42,8
+    EDITTEXT        IDC_PRJ_SUBJECT,165,10,165,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRO_DETAIL,7,30,323,71,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+END
+
+IDD_PROJECT_ADD DIALOG  0, 0, 368, 366
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建项目"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "添加(&A)",IDOK,311,345,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,345,50,14
+    LTEXT           "项目名称：",IDC_STATIC,7,12,47,8
+    EDITTEXT        IDC_EDIT1,58,10,303,12,ES_AUTOHSCROLL
+    LTEXT           "项目编号：",IDC_STATIC,7,32,44,8
+    EDITTEXT        IDC_EDIT2,58,30,60,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "发起者：",IDC_STATIC,125,32,34,8
+    EDITTEXT        IDC_EDIT3,160,29,60,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "项目详细说明：",IDC_STATIC,7,52,65,8
+    EDITTEXT        IDC_DETAIL,7,64,354,273,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,7,8,1
+ PRODUCTVERSION 2,7,8,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "FEIM Studios"
+            VALUE "FileDescription", "XEIM 通讯系统客户端"
+            VALUE "FileVersion", "2, 7, 8, 1"
+            VALUE "InternalName", "XEIM Client"
+            VALUE "LegalCopyright", "版权所有 (C) FEIM Studios 2008"
+            VALUE "OriginalFilename", "XEIM CLIENT.EXE"
+            VALUE "ProductName", "XEIM 通许系统"
+            VALUE "ProductVersion", "2, 7, 8, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_CLIENT02_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_HISTORY_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_NORMAL_SMS, DIALOG
+    BEGIN
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+
+    IDD_PROJECT_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+
+    IDD_WORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+
+    IDD_PROJECT_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res\\default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\usericon.bmp"
+IDB_BITMAP2             BITMAP                  "res\\logo01.bmp"
+IDB_BITMAP3             BITMAP                  "res\\localuser.bmp"
+IDB_BITMAP4             BITMAP                  "res\\MAINFRAME_LINE.bmp"
+IDB_BITMAP5             BITMAP                  "res\\MAINFRAME_CONTACT.bmp"
+IDB_BITMAP6             BITMAP                  "res\\MAINFRAME_USER.bmp"
+IDB_BITMAP7             BITMAP                  "res\\MAINFRAME_LINE_2.bmp"
+IDB_BITMAP8             BITMAP                  "res\\clock.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SYSTEMTRAY MENU 
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        MENUITEM "还原",                          ID_TRAYRESTORE
+        MENUITEM "注销",                          ID_MENUITEM_LOGOUT
+        MENUITEM "退出",                          ID_TRAYQUIT
+    END
+END
+
+IDM_CHAT MENU 
+BEGIN
+    POPUP "聊天框"
+    BEGIN
+        MENUITEM "复  制 (&C) ",                  IDM_CHAT_COPY
+        MENUITEM "剪  切 (&X)",                   IDM_CHAT_CUT
+        MENUITEM "粘  贴 (&V)",                   IDM_CHAT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "全  选 (&A)",                   IDM_CHAT_SELALL
+    END
+    POPUP "系统菜单"
+    BEGIN
+        MENUITEM "帮助(&H)",                      IDM_HELP
+        MENUITEM "退出(X)",                       IDM_QUIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 XEIM 客户端(&A)..."
+    IDS_STRING_TITLE        "XEIM 沟通专家"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\client02.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client02", "..\XEIM 飞鸽传书客户端源码\client02.vcproj", "{C7DEF9A9-34AA-4F88-B198-0AA6A1973FA3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xsvr", "xsvr.vcproj", "{239DCF63-F3E2-4640-ABBC-2378258B76A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7DEF9A9-34AA-4F88-B198-0AA6A1973FA3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C7DEF9A9-34AA-4F88-B198-0AA6A1973FA3}.Debug|Win32.Build.0 = Debug|Win32
+		{C7DEF9A9-34AA-4F88-B198-0AA6A1973FA3}.Release|Win32.ActiveCfg = Release|Win32
+		{C7DEF9A9-34AA-4F88-B198-0AA6A1973FA3}.Release|Win32.Build.0 = Release|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Debug|Win32.Build.0 = Debug|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Release|Win32.ActiveCfg = Release|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

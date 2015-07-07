@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xsvr", "XEIM 飞鸽传书服务端源码\xsvr.vcxproj", "{239DCF63-F3E2-4640-ABBC-2378258B76A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xsetting", "xsetting\xsetting.vcxproj", "{5249BBC1-B188-4224-BD18-80C0C9029160}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xlanf", "xlanf\xlanf.vcxproj", "{15AD8286-2682-4A9A-99A4-F4A767B975C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMSG", "XEIM 飞鸽传书传输协议\XMSG.vcxproj", "{4FAA43DF-96A8-4F50-7550-AADB29F7D87A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client02", "XEIM 飞鸽传书客户端源码\client02.vcxproj", "{DAB5F55F-8DDB-BFE6-3EFF-365F3A3640A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Debug|Win32.Build.0 = Debug|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Release|Win32.ActiveCfg = Release|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Release|Win32.Build.0 = Release|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Template|Win32.ActiveCfg = Template|Win32
+		{239DCF63-F3E2-4640-ABBC-2378258B76A0}.Template|Win32.Build.0 = Template|Win32
+		{5249BBC1-B188-4224-BD18-80C0C9029160}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5249BBC1-B188-4224-BD18-80C0C9029160}.Debug|Win32.Build.0 = Debug|Win32
+		{5249BBC1-B188-4224-BD18-80C0C9029160}.Release|Win32.ActiveCfg = Release|Win32
+		{5249BBC1-B188-4224-BD18-80C0C9029160}.Release|Win32.Build.0 = Release|Win32
+		{5249BBC1-B188-4224-BD18-80C0C9029160}.Template|Win32.ActiveCfg = Template|Win32
+		{5249BBC1-B188-4224-BD18-80C0C9029160}.Template|Win32.Build.0 = Template|Win32
+		{15AD8286-2682-4A9A-99A4-F4A767B975C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15AD8286-2682-4A9A-99A4-F4A767B975C4}.Debug|Win32.Build.0 = Debug|Win32
+		{15AD8286-2682-4A9A-99A4-F4A767B975C4}.Release|Win32.ActiveCfg = Release|Win32
+		{15AD8286-2682-4A9A-99A4-F4A767B975C4}.Release|Win32.Build.0 = Release|Win32
+		{15AD8286-2682-4A9A-99A4-F4A767B975C4}.Template|Win32.ActiveCfg = Release|Win32
+		{15AD8286-2682-4A9A-99A4-F4A767B975C4}.Template|Win32.Build.0 = Release|Win32
+		{4FAA43DF-96A8-4F50-7550-AADB29F7D87A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FAA43DF-96A8-4F50-7550-AADB29F7D87A}.Debug|Win32.Build.0 = Debug|Win32
+		{4FAA43DF-96A8-4F50-7550-AADB29F7D87A}.Release|Win32.ActiveCfg = Release|Win32
+		{4FAA43DF-96A8-4F50-7550-AADB29F7D87A}.Release|Win32.Build.0 = Release|Win32
+		{4FAA43DF-96A8-4F50-7550-AADB29F7D87A}.Template|Win32.ActiveCfg = Release|Win32
+		{4FAA43DF-96A8-4F50-7550-AADB29F7D87A}.Template|Win32.Build.0 = Release|Win32
+		{DAB5F55F-8DDB-BFE6-3EFF-365F3A3640A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DAB5F55F-8DDB-BFE6-3EFF-365F3A3640A6}.Debug|Win32.Build.0 = Debug|Win32
+		{DAB5F55F-8DDB-BFE6-3EFF-365F3A3640A6}.Release|Win32.ActiveCfg = Release|Win32
+		{DAB5F55F-8DDB-BFE6-3EFF-365F3A3640A6}.Release|Win32.Build.0 = Release|Win32
+		{DAB5F55F-8DDB-BFE6-3EFF-365F3A3640A6}.Template|Win32.ActiveCfg = Template|Win32
+		{DAB5F55F-8DDB-BFE6-3EFF-365F3A3640A6}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

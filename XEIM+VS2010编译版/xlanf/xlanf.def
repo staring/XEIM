@@ -1,0 +1,7 @@
+; xlanf.def : Declares the module parameters for the DLL.
+
+LIBRARY      "xlanf"
+DESCRIPTION  'xlanf Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

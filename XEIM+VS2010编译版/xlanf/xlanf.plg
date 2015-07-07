@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: xlanf - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/xlanf.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\xlanf.rc"" 
+Creating temporary file "C:\DOCUME~1\aaa\LOCALS~1\Temp\RSP154.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/xlanf.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\MyHyperLink.cpp"
+"C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\xdlldef.cpp"
+"C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\XFrame.cpp"
+"C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\xlanf.cpp"
+"C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\XRecvDlg.cpp"
+"C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\XSendDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\aaa\LOCALS~1\Temp\RSP154.tmp" 
+Creating temporary file "C:\DOCUME~1\aaa\LOCALS~1\Temp\RSP155.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/xlanf.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\aaa\桌面\XEIM\XEIM Working Files 2009-02-10\dll\xlanf\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\aaa\LOCALS~1\Temp\RSP155.tmp" 
+Creating temporary file "C:\DOCUME~1\aaa\LOCALS~1\Temp\RSP156.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/xlanf.pdb" /machine:I386 /def:".\xlanf.def" /out:"Release/xlanf.dll" /implib:"Release/xlanf.lib" 
+".\Release\MyHyperLink.obj"
+".\Release\StdAfx.obj"
+".\Release\xdlldef.obj"
+".\Release\XFrame.obj"
+".\Release\xlanf.obj"
+".\Release\XRecvDlg.obj"
+".\Release\XSendDlg.obj"
+".\Release\xlanf.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\aaa\LOCALS~1\Temp\RSP156.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MyHyperLink.cpp
+xdlldef.cpp
+XFrame.cpp
+xlanf.cpp
+XRecvDlg.cpp
+XSendDlg.cpp
+Generating Code...
+Linking...
+   Creating library Release/xlanf.lib and object Release/xlanf.exp
+
+
+
+<h3>Results</h3>
+xlanf.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

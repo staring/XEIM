@@ -1,0 +1,179 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\xlanf.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,1
+ PRODUCTVERSION 1,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "FEIM Studios\0"
+            VALUE "FileDescription", "xeim file transfer\0"
+            VALUE "FileVersion", "1, 2, 0, 1\0"
+            VALUE "InternalName", "xlanf\0"
+            VALUE "LegalCopyright", "版权所有 (C) FEIM Studios 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "xlanf.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "xlanf Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 2, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FRAME DIALOG DISCARDABLE  0, 0, 148, 243
+STYLE DS_CONTROL | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "Static",IDC_FILE_TOTAL,5,223,98,8
+END
+
+IDD_SEND DIALOGEX 0, 0, 116, 121
+STYLE DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_STATICEDGE
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           ".",IDC_STATIC8,88,13,18,8
+    LTEXT           "文件发送",IDC_STATIC6,5,25,84,8
+    ICON            "",IDC_STATIC_ICON,2,2,20,20
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    27,14,57,7
+    LTEXT           "取消",IDC_STATIC_CANCEL,92,25,19,8
+    LTEXT           ".",IDC_FILE_NAME,27,3,70,8
+    LTEXT           "等待对方接收...",IDC_STATIC10,27,14,62,8
+END
+
+IDD_RECV DIALOGEX 0, 0, 116, 38
+STYLE DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_STATICEDGE
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC8,88,13,18,8
+    LTEXT           "文件接收",IDC_STATIC6,5,25,81,8
+    ICON            "",IDC_STATIC_ICON,2,2,20,20
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    27,14,57,7
+    LTEXT           "保存",IDC_STATIC_SAVE,40,25,16,8
+    LTEXT           "拒收",IDC_STATIC_REFUSE,92,25,17,8
+    LTEXT           "取消",IDC_STATIC_CANCEL,92,25,19,8
+    LTEXT           ".",IDC_FILE_NAME,27,3,80,8
+    LTEXT           "另存为",IDC_STATIC_SAVEAS,62,25,24,8
+    LTEXT           "是否接收文件...",IDC_STATIC10,27,14,60,8
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\xlanf.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
